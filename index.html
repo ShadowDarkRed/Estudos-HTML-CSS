@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Web Design</h1>
+        <h2>HTML</h2>
+            <h3>O que são tags HTML?</h3>
+                <p><b>As tags HTML são como palavras-chave que definem como o navegador Web irá formatar e exibir o conteúdo.</b> Tags HTML sempre são representadas com o símbolo de chevron (< >) contendo em seu interior propriedades diferentes, os atributos, que darão os comandos de criação do documento HTML, descrevendo as características dos elementos. O navegador da Web irá interpretar o documento lendo de cima para baixo e da esquerda para a direita.</p>
+                <p><b>Tags HTML são constituídas de três partes principais: tag de abertura, conteúdo e tag de fechamento (algumas tags HTML não são fechadas).</b>O uso de tags de forma semântica é essencial para que o navegador da Web possa interpretar e diferenciar entre um texto simples e um texto HTML e tornar as páginas da Web mais informativas e adaptáveis, permitindo que os navegadores e mecanismos de pesquisa interpretem melhor o conteúdo.</p>
+                <p>As tags HTML são mecanismos de formatação e organização de conteúdos web. Elas auxiliam pessoas desenvolvedoras web a manipularem os elementos das páginas de modo preciso. Assim, torna-se mais fácil criar, atualizar e gerenciar sites e sistemas web.</p>
+            <h3>O que são elementos HTML?</h3>
+                <p>Arquivos HTML são constituídos de <b>elementos</b>, ou seja, <b>componentes que informam a um navegador da Web como estruturar e interpretar as partes do documento HTML.</b> Um elemento em HTML consiste de uma tag de início <.tag inicio>, tag de fechamento <./tag fechamento> e um conteúdo inserido entre elas, lembrando que existem tags que não são fechadas como <.img/>.</p>
+                <p><b>Elementos HTML são usados para expressar partes do documento, como cabeçalhos, parágrafos e rodapés, e para incorporar conteúdos como hyperlinks, texto e imagens.</b> Um arquivo HTML escrito com elementos de forma semântica torna o HTML mais compreensível, definindo melhor as diferentes seções e o layout das páginas Web.</p>
+                <p>Vejamos abaixo como se estrutura os elementos das tags HTML:</p>
+                <img class="imagem-Paragrafo" src="img/Paragrafo.png" alt="">
+                <p><b>Vejamos abaixo como se estrutura os elementos das tags HTML:</b>Vejamos abaixo a diferença entre eles:</p>
+                <ul>
+                    <li>Os <b>elementos de nível de bloco</b> sempre começam com uma nova linha, ocupam toda a largura de uma página Web, da esquerda para a direita e estruturam a parte principal da página dividindo-a em blocos coerentes.
+                    </li>
+                    <img src="img/Elementos de Bloco.png" alt="">
+                    <li>Os <b>elementos em linha</b> não começam com uma nova linha e assumem a largura conforme o requisito para o espaço necessário. Aparecem na mesma linha que outros elementos e diferenciam a parte de um determinado texto, lhe conferindo uma função particular.</li>
+                    <img src="img/Elementos em Linha.png" alt="">
+                </ul>
+                <p>O resultado para a pessoa usuária seria o seguinte:</p>
+                <p>Sou a div (elemento nível de bloco)... Sou a âncora, um elemento! ...e estou envolvendo um elemento</p> <!--diminuir tamanho-->
+            <h3>O que são atributos HTML?</h3>
+                <p><b>Atributos HTML são palavras especiais que fornecem informações adicionais sobre os elementos e definem características ou propriedades adicionais destes elementos como altura e largura de uma imagem.</b> Os atributos são especificados dentro da tag de início com um nome e um valor neste formato: nome: “valor”.</p>
+                <p>No exemplo abaixo vemos o elemento de imagem <.img> que necessita do atributo obrigatório src pois ele irá direcionar o caminho/URL do arquivo de imagem para exibir no documento.</p>
+                <img src="img/img.png" alt="">
+                <p>Neste exemplo abaixo temos a mesma tag de imagem com 3 diferentes atributos, caminho/URL, largura e altura.</p>
+                <img src="img/img2.png" alt="">
+        
+            <h3>Entenda a estrutura básica de um documento HTML!</h3>
+                    <p>A estrutura básica de um documento HTML consiste em 5 elementos:</p>
+                    <ol>
+                        <li><.!DOCTYPE></li>
+                        <li><.html><./html></li>
+                        <li><.head><./head></li>
+                        <li><.title></li>
+                        <li><.body><./body></li>
+                    </ol>
+                    <img src="img/Estrutura Basica.png" alt="">
+                    <ul>
+                        <li>O <.!DOCTYPE> informa ao navegador da web em qual versão do HTML a página está sendo escrita, por exemplo quando incluímos dentro do DOCTYPE a palavra HTML (<.!DOCTYPE html>), o navegador entenderá que aquela versão é do HTML5.</li>
+                        <li>O elemento <.html><./html> está logo abaixo da declaração DOCTYPE, é o elemento básico e principal de um documento HTML e atua como um container onde podemos definir o idioma padrão utilizado pelo documento através do atributo “lang” que por padrão vem em inglês (<.html lang = “en”>). Todo documento HTML inicializa e finaliza com essa tag.</li>
+                        <li>O <.head><./head> é o cabeçalho do documento cujo conteúdo não é exibido no navegador durante o carregamento da página. Esse elemento contém metadados, informações importantes, que especifica dados sobre o documento HTML. Esses metadados são definidos no documento nas seguintes tags:</li>
+                        <ol>
+                            <li><.title></li>
+                            <li><.style></li>
+                            <li><.meta></li>
+                            <li><.link></li>
+                            <li><.script></li>
+                            <li><.base></li>
+                        </ol>
+                        <li>O elemento <.title> é usado para definir o título do documento que é exibido na parte superior da janela do navegador, e fornece um título para a página quando ela é adicionada aos favoritos, favorecendo a busca nos resultados de pesquisa.</li>
+                        <li><.body><./body></li>
+                    </ul>
+                    <p>Define o corpo do documento, e tudo que estiver dentro desta tag será mostrado no navegador web.</p>
+            <h3>Quais são os tipos de tags existentes?</h3>
+                <p>Existem vários tipos de tags HTML. Cada uma tem um fim específico. Os mais comuns são os seguintes:</p>
+                <ul>
+                    <li><b>tags estruturais:</b> mudam o posicionamento de elementos na web;</li>
+                    <li><b>tags de cabeçalho:</b> estão relacionadas com o cabeçalho e alguns elementos básicos de sites, como o título e o favicon;</li>
+                    <li><b>tags de links:</b> são utilizadas para gerenciar qualquer tipo de link existente na página;</li>
+                    <li><b>tags de listas:</b> permitem criar diferentes listas (como esta que você está lendo!);</li>
+                    <li><b>tags de formatação de caracteres:</b> adicionam formatação especial a qualquer texto exibido na página web;</li>
+                    <li><b>tags de manipulação de elementos:</b> tornam mais preciso o posicionamento de conteúdos no site;</li>
+                    <li><b>tags de conteúdo multimídia:</b> utilizadas para inserir elementos como imagens, vídeos e músicas nas páginas web;</li>
+                    <li><b>tags de frames:</b> para criar frames (que funciona como uma divisão interna da página) com conteúdos internos;</li>
+                    <li><b>tags de formulários:</b> adotadas para criar e modificar tabelas facilmente.</li>
+                    <li><b>tags de tabelas:</b> adotadas para criar e modificar tabelas facilmente.</li>
+                </ul>    
+            <h3>Quais são as principais tags HTML?</h3>
+                <p>Agora que já sabemos quais são os tipos de tags HTML mais comuns, vamos ao ponto principal do texto. Veja abaixo as tags mais comuns utilizadas por profissionais de tecnologia !</p>
+                <h4>Tags estruturais</h4> <!--Aumentar fonte-->
+                <ol>
+                    <li>Tag <.html><./html></li>
+                        <img src="img/html.png" alt="">
+                        <p>Essa tag está sempre no começo e no fim da página web. Ela limita onde o código começa e termina.</p>
+                    <li>Tag <.head><./head></li>
+                        <img src="img/head.png" alt="">
+                        <p>Utilizada para definir o começo e o fim do cabeçalho de um documento HTML, a qual também contém informações gerais sobre o documento, incluindo títulos e links.</p>
+                    <li>Tag <.meta></li>
+                        <img src="img/meta.png" alt="">
+                        <p>Essa tag traz dados básicos sobre o documento, como autor e data de criação.</p>
+                    <li>Tag <.body><./body></li>
+                        <img src="img/body.png" alt="">
+                        <p>Indica para o navegador o corpo do documento HTML, ou seja, a parte principal da página web. Essa tag é acompanhada de outros elementos, sendo os mais comuns:</p>
+                    <ul>
+                        <li>bgcolor, que define o conteúdo de fundo na codificação #RGBGBB;</li>
+                        <li>background, que permite utilizar uma imagem;</li>
+                        <li>text, que define a cor do texto principal;</li>
+                        <li>link, que define a cor dos links da página;</li>
+                        <li>vlink, que define a cor de links que já foram visitados pelo usuário;</li>
+                        <li>alink marca a cor de links ativados pelo usuário.</li>
+                    </ul>
+                        <li>Tag <.section><../section></li>
+                            <img src="img/section.png" alt="">
+                            <p>Tag <.section> é utilizada para definir seções em um documento, separando conteúdos como capítulos, artigos, cabeçalhos e etc.</p>
+                    <li>Tag <.article></..article></li>
+                        <img src="img/article.png" alt="">
+                        <p>Tag que define um conteúdo independente e completo de outros, artigos com conteúdos que fazem sentido por si só.</p>
+                    <li>Tag <.div></..div></li>
+                        <img src="img/div.webp" alt="">
+                        <p>Tag que funciona como um contêiner e define um bloco inteiro de conteúdo. Muito útil para organizar elementos na página web.</p>
+                    <li>Tag <.title><./title></li>
+                        <img src="img/title.png" alt="">
+                        <p>Define o título do documento HTML. Esse é o nome que é exibido no topo da janela do navegador quando a página é aberta.</p>
+                    <li><.nav></.nav></li>
+                        <img src="img/nav.png" alt="">
+                        <p>A tag <.nav> é usada para representar uma seção com conjunto links de navegação, dentro do documento atual ou para outro documento.</p>
+                </ol>
+            <h4>Tags de conteúdo</h4>
+                <ol>
+                    <li>Tags HTML de título</li>
+                    <ul>
+                        <li><.h1><./h1>,  <.h2><./h2>, <.h3><./h3>, <.h4><./h4>, <.h5><./h5>, <.h6><./h6> </li>
+                    </ul>
+                        <img src="img/hearding.webp" alt="">
+                        <p>Definem o tamanho do título do documento, sendo <.h1> de maior valor hierárquico e <.6> de menor valor hierárquico.</p>
+                </ol>
+            <h4>Tags HTML de texto</h4>
+                <ol>
+                    <li>Tag <.p><./p></li>
+                        <img src="img/p.png" alt="">
+                        <p>Define o começo e o fim de um parágrafo. Pode ser utilizado ao lado de align para indicar o alinhamento do trecho.</p>
+                    <li>Tag <.i></.i>, <.u></.u></li>
+                        <img src="img/i and u.png" alt="">
+                        <p>Tag <.i><./i> formata textos em itálico e a tag <.u><./u> em sublinhado. Ambas requerem abertura e fechamento com o conteúdo entre elas.</p>
+                    <li>Tag <.br><./br></li>
+                        <img src="img/br.png" alt="">
+                        <p>Tags utilizadas para quebra de linha em um texto. É mais comum a utilização da tag fechada <./br> pois ela é suportada tanto em HTML quanto XHTML.</p>
+                    <li>Tag <.strong><./strong></li>
+                        <img src="img/strrong.png" alt="">
+                        <p>Tag utilizada para representar uma parte do texto que seja importante pois o texto fica em negrito no navegador web.</p>
+                    <li>Tag <.font><./font></li>
+                        <img src="img/font.png" alt="">
+                        <p>Tag <.font><./font> apesar de não ser compatível com HTML5 como visto na imagem acima, é utilizada no HTML para definir o estilo da fonte para o texto.</p>
+                    <li>Tag <.span><./span></li>
+                        <img src="img/span.png" alt="">
+                        <p>Tag utilizada para agrupar elementos para fins de estilo, porém só deve ser usado quando não houver outra alternativa de elemento semântico.</p>
+                </ol>
+            <h4>Tag de link HTML </h4>
+                <ol>
+                    <li>Tag <.a><./a></li>
+                        <img src="img/a.png" alt="">
+                        <p>Cria um link e atribui elementos a ele, como:</p>
+                        <ul>
+                            <li>href: vincula a URL do documento a algo;</li>
+                            <li>name: o nome âncora;</li>
+                            <li>target: identifica se o link deve ser aberto na mesma janela, em nova aba ou nova janela;</li>
+                            <li>rel: aponta os tipos de link que avançam;</li>
+                            <li>rev: define os links que podem reverter uma ação;</li>
+                            <li>rev: define os links que podem reverter uma ação;</li>
+                            <li>shape e coords: para uso com formas de objetos;</li>
+                            <li>tabindex: determina a ordem das guias que são exibidas para o usuário;</li>
+                            <li>onclick: define um evento JavaScript para o click no item;</li>
+                            <li>onmouseover: define um evento JavaScript caso o usuário passe com o ponteiro do mouse em cima do item;</li>
+                            <li>onmouseover: define um evento JavaScript caso o usuário passe com o ponteiro do mouse em cima do item;</li>
+                        </ul>
+                </ol>
+            <h4>Tags HTML de multimídia</h4>
+                    <ol>
+                        <li>Tag <.img/></li>
+                        <img src="img/tag_img.png" alt="">
+                        <p>A tag <.img> permite inserir imagens na página web e não possui fechamento, contendo apenas atributos nela.</p>
+                        <li>Tag <.audio><./audio></li>
+                         <img src="img/tag_audio.png" alt=""> 
+                         <p>Tag <.audio> é utilizada para definir sons como música ou outros tipos de áudio. O HTML5 suporta mp3, onda e ogg.</p>
+                        <li>Tag <.video></.video></li>
+                        <img src="img/tag_video.png" alt="">
+                        <p>A tag <.video> é usada para importação de arquivos de vídeo. HTML suporta três formatos de vídeos compatíveis com essa tag (mp4, webM e ogg).</p>
+                    </ol>
+            <h4>Tags HTML de listas </h4>
+                    <ol>
+                        <li>Tag <.ol><./ol></li>
+                         <img src="img/tag_ol.png" alt="">
+                         <p>Cria listas ordenadas. Deve ser acompanhado de start, para indicar o começo da lista e type, para apontar o tipo de caractere que será ordenado.</p>    
+                        <li>Tag <.ul><./ul></li>  
+                         <img src="img/tag_ul.png" alt="">  
+                         <p>Cria listas não ordenadas. Precisa do type para apontar o tipo de item que fará parte da lista.</p>  
+                        <li>Tag <.li><./li></li>  
+                          <img src="img/tag_li.png" alt="">
+                          <p>Os elementos <.li><./li> define cada item da lista, que fazem parte de listas ordenadas ou não ordenadas.</p>      
+                    </ol>
+            <h4>Tag HTML de comentário</h4>
+                    <ol>
+                        <li>Tag <.!– –></li>
+                        <img src="img/tag_comentario.png" alt="">
+                        <p>Essa tag cria um comentário em qualquer parte do código-fonte. Útil para orientar pessoas em modificações futuras. Ou para relembrar sobre como cada linha funciona.</p>
+                    </ol>
+            <h4>Tag HTML de estilos e scripts</h4>
+                    <ol>
+                        <li>ag <.style><./style></li>
+                            <img src="img/tag_style.png" alt="">
+                            <p>Essa tag define o estilo de parte ou de todo o conteúdo da página web com arquivo .css importado.</p>
+                        <li>Tag <.script><./script></li>
+                            <img src="img/tag_script.png" alt="">
+                            <p>Tag utilizada para a importação de um documento Javascript para interações do lado cliente com conteúdo dinâmico.</p>
+                    </ol>
+            <h4>Tag HTML para recebimento de dados</h4>
+                    <ol>
+                        <li><.input type=”text”>, <.input type=”email”>, <.input type=”Submit”></li>
+                        <img src="img/input.png" alt="">
+                        <p>Tags do tipo <.input> são utilizadas para o recebimento de dados do usuário, possuindo diferença entre elas como o tipo do atributo que irá receber (type).</p>
+                    </ol>
+        <!--h2>CSS</h2-->
+</body>
+</html>
